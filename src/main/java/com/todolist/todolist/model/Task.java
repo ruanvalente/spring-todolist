@@ -26,6 +26,9 @@ public class Task {
     private String description;
 
     @Column(nullable = false)
+    private boolean status = false;
+
+    @Column(nullable = false)
     private Date deadLine;
 
     @CreationTimestamp
